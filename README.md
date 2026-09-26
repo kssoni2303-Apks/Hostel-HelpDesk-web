@@ -1,34 +1,81 @@
-# hostelsystemmanagement
+# Hostel HelpDesk
 
-This is a React-based full stack project for managing hostel-related complaints.
+Hostel HelpDesk is a web-based hostel complaint management system that helps students submit and track complaints while allowing workers and administrators to manage and resolve them efficiently.
 
-## Getting Started with Create React App
+## Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Student
+- Register and login
+- Submit complaints
+- Select complaint type/domain
+- View submitted complaints
+- Track complaint status
 
-## Available Scripts
+### Worker
+- Login to worker dashboard
+- View assigned complaints
+- View complaint details
+- Update complaint status
 
-In the project directory, you can run:
+### Admin
+- Admin login
+- View and manage complaints
+- Assign complaints to workers
+- Manage workers
+- Monitor complaint status
 
-### `npm start`
-Runs the app in the development mode.  
-Open http://localhost:3000 to view it in your browser.
+## Complaint Types
 
-The page will reload when you make changes.  
-You may also see any lint errors in the console.
+The system supports different hostel maintenance complaints such as:
 
-### `npm test`
-Launches the test runner in the interactive watch mode.
+- Electrical
+- Plumbing
+- Carpenter
+- General maintenance
+- Other hostel-related issues
 
-### `npm run build`
-Builds the app for production in the `build` folder.
+## Tech Stack
 
-### `npm run eject`
-**Warning: this is a one-way operation.** Once you eject, you can’t go back.
+- **Frontend:** React.js, JavaScript, HTML, CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MySQL
+- **Tools:** Git, GitHub, VS Code, npm
 
-## Learn More
+## Project Structure
 
-You can learn more in the Create React App documentation:  
-https://facebook.github.io/create-react-app/docs/getting-started
+```text
+Hostel-Helpdesk-web/
+│
+├── hostel-backend/
+├── hostel-frontend/
+├── public/
+├── src/
+├── package.json
+├── package-lock.json
+├── .gitignore
+└── README.md
 
-Learn React: https://reactjs.org/
+
+My Contribution
+
+This was a group project. My main contribution was focused on the frontend, particularly:
+
+Developed the Worker frontend
+Developed the Admin frontend
+Created complaint management interfaces
+Worked on dashboard UI
+Implemented navigation and user interactions
+Worked with frontend-backend integration
+
+
+Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+React.js and JavaScript
+Building component-based user interfaces
+REST API integration
+MySQL database integration
+Role-based application design
+Git and GitHub
+Developing a real-world web application
