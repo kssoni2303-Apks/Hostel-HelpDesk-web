@@ -1,0 +1,88 @@
+.history-container {
+  width: 80%;
+  margin-bottom: 100px;
+  padding: 100px;
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  color: #34496a;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 80px;
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.history-table th {
+  background-color: #f7f7f7;
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+.status.resolved {
+  color: green;
+  font-weight: bold;
+}
+
+.status.in-progress {
+  color: orange;
+  font-weight: bold;
+}
+
+.status.pending {
+  color: red;
+  font-weight: bold;
+}
+
+
+/* ============================
+       RESPONSIVE – TABLET
+============================ */
+@media (max-width: 900px) {
+
+  .history-container {
+    width: 90%;
+    padding: 50px;
+    font-size: 1.2rem;
+  }
+
+  .history-table th,
+  .history-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+/* ============================
+       RESPONSIVE – MOBILE
+============================ */
+@media (max-width: 500px) {
+
+  .history-container {
+    width: 95%;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .history-table {
+    margin-top: 40px;
+    display: block;
+    overflow-x: auto;   /* horizontal scroll for small screens */
+    white-space: nowrap;
+  }
+
+  .history-table th,
+  .history-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

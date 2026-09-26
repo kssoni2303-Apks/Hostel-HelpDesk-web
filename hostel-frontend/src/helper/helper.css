@@ -1,0 +1,359 @@
+
+/* ==========================
+   GLOBAL RESET + BASE UI
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background:  rgb(225, 225, 215);
+  color: #222;
+}
+
+/* Smooth transitions */
+a, button, input, div {
+  transition: 0.25s ease;
+}
+
+
+/* ==========================
+   NAVBAR (Light Purple)
+========================== */
+.worker-navbar {
+  background: #c7a4ff; /* light purple */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.worker-navbar button {
+  background: #8e4dff;
+  border: none;
+  padding: 6px 14px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav a, .worker-navbar a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.nav a:hover, .worker-navbar a:hover {
+  color: #007bff;}
+
+  .worker-navbar-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+
+
+/* ==========================
+   MAIN CONTAINER
+========================== */
+.page-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+/* DASHBOARD SUMMARY TABLE ON IMAGE */
+.dashboard-summary-table td {
+  border: 1px solid #fff;
+  padding: 12px;
+  color: white;
+}
+
+.dashboard-summary-table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dashboard-summary-table tr:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+/* ==========================
+   DASHBOARD PAGE
+========================== */
+
+
+
+ 
+
+.work-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+.work-summary-table td, 
+.work-summary-table th {
+  border: 1px solid #ccc;
+  padding: 12px 14px;
+  text-align: center;
+}
+
+.work-summary-table th {
+  background: #eee;
+  font-weight: 700;
+}
+
+
+/* ==========================
+   TABLE STYLE (Assigned Page)
+========================== */
+.table-container {
+  margin-top: 25px;
+}
+
+.worker-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.worker-table th {
+  background: #eef2f7;
+  padding: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.worker-table td {
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: white;
+  font-weight: 600;
+}
+
+.status-pending {
+  background: #ff9800;
+}
+
+.status-inprogress {
+  background: #007bff;
+}
+
+.status-done {
+  background: #28a745;
+}
+
+/* ==========================
+   PROFILE CARD
+========================== */
+.profile-card {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.profile-card label {
+  font-weight: 600;
+}
+
+.profile-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+}
+.profile-container {
+  padding: 30px;
+  width: 50%;
+  margin: auto;           /* centers horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* centers content inside */
+}
+
+.profile-image-box {
+  width: 140px;
+  height: 140px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #444;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-form input,
+.profile-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+}
+
+.profile-form .readonly {
+  background: #eee;
+}
+
+.profile-form button {
+  padding: 10px 20px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.profile-form button:hover {
+  background: #0a7a0a;
+}
+
+.profile-message {
+  color: blue;
+  margin-top: 15px;
+}
+.profile-pic-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;        /* important: keeps image inside circle */
+  border: 3px solid #0d0c0e;
+  margin: 0 auto;
+}
+
+.profile-pic-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* ensures correct crop */
+  display: block;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+button, .btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary, button[type="submit"] {
+  background: #007bff;
+  color: white;
+}
+
+.btn-primary:hover, button[type="submit"]:hover {
+  background: #005fcc;
+}
+
+.btn-danger {
+  background: red;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: darkred;
+}
+
+/* ==========================
+   LOGIN & SIGNUP
+========================== */
+.auth-container {
+  width: 370px;
+  background: white;
+  margin: 70px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+.login-container {
+  width: 350px;
+  margin: 80px auto;
+  padding: 20px;
+  background: rgb(235, 192, 113);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+}
+
+.login-container button {
+  width: 95%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #444;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+}

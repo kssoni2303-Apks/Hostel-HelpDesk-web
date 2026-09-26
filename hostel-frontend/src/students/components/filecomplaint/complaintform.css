@@ -1,0 +1,119 @@
+/* Background shapes */
+.float-shape {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: #c8f7f0;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: -1;
+  animation: float 5s infinite ease-in-out;
+}
+
+.shape1 {
+  top: 80px;
+  right: -40px;
+}
+
+.shape2 {
+  top: 300px;
+  left: -40px;
+  width: 90px;
+  height: 90px;
+  animation-delay: 1.5s;
+}
+
+.shape3 {
+  bottom: 40px;
+  right: -50px;
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+
+/* MAIN WRAPPER — CENTERED + MEDIUM WIDTH */
+.complaint-wrapper {
+  position: relative;
+  margin: 0 auto;              /* Center it */
+  width: 75%;                  /* Medium width */
+  max-width: 850px;            /* Prevent too large */
+  min-width: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Cute Quote Box */
+.complaint-quote {
+  background: #f0fefc;
+  border-left: 6px solid #2e8b57;
+  padding: 30px;
+  border-radius: 10px;
+  color: #0f5c3b;
+  font-style: italic;
+  font-size: 16px;
+}
+
+
+/* FORM */
+.complaint-form {
+  background: #ffffff;
+  padding: 100px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+  color: #2e6f57;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a9d9cc;
+  border-radius: 8px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #388e3c;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .complaint-wrapper {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .float-shape {
+    display: none; /* hide shapes on small screens */
+  }
+}

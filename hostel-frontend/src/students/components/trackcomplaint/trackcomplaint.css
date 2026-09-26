@@ -1,0 +1,110 @@
+.track-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+.track-container h2{
+  font-size: 2.5rem;
+  font-family: Georgia, serif;
+  color: #34496a;
+ margin-bottom: 60px;
+}
+
+.track-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 115px;
+}
+
+.track-form input {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #8fb5b3;
+  border-radius: 8px;
+}
+
+.track-form button {
+  padding: 10px 20px;
+  background-color: #2e8b57;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.status-box {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #eef7f5;
+  border: 1px solid #bcd4d8;
+}
+
+.progress-steps {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.step {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f4f4f4;
+  border-left: 5px solid red;
+  border-radius: 6px;
+}
+
+.step.done {
+  background: #d6f5d6;
+  border-left: 5px solid green;
+}
+
+/* 🔻 RESPONSIVE DESIGN */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .track-container {
+    padding: 15px;
+  }
+
+  .track-form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .track-form input {
+    width: 100%;
+  }
+
+  .track-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .status-box {
+    padding: 15px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .track-container {
+    margin: 20px;
+  }
+
+  .track-form input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .track-form button {
+    font-size: 14px;
+  }
+
+  .step {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

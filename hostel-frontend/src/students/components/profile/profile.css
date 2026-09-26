@@ -1,0 +1,75 @@
+.profile-container {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1d4e6c;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.profile-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #333;
+}
+
+.profile-form input,
+.profile-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  width: 100%;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.profile-form input:focus,
+.profile-form select:focus {
+  border-color: #1d4e6c;
+  box-shadow: 0 0 5px rgba(29, 78, 108, 0.3);
+  outline: none;
+}
+
+.profile-form button {
+  grid-column: span 2;
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.profile-form button:hover {
+  background: #388e3c;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .profile-form {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-container {
+    padding: 20px;
+  }
+}
